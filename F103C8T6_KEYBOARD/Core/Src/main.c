@@ -104,26 +104,14 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  HIDkeyboard.KEYCODE1=0x04;
-//	  HIDkeyboard.MODIFIER=0x02;  // To press shift key<br>keyBoardHIDsub.KEYCODE1=0x04;  // Press A key
-//	  HIDkeyboard.KEYCODE2=0x05;  // Press B key
-//	  HIDkeyboard.KEYCODE3=0x06;  // Press C key
-//	  USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyboard,sizeof(HIDkeyboard));
-//	  HAL_Delay(50); 		       // Press all key for 50 milliseconds
-//	  HIDkeyboard.MODIFIER=0x00;  // To release shift key
-//	  HIDkeyboard.KEYCODE1=0x00;  // Release A key
-//	  HIDkeyboard.KEYCODE2=0x00;  // Release B key
-//	  HIDkeyboard.KEYCODE3=0x00;  // Release C key
-//	  USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyboard,sizeof(HIDkeyboard));
-//	  if (TIMER_COUNT == SET) {
-//		  TIMER_COUNT = RESET;
-//		  timer_200hz++;
-//		  if (timer_200hz == 2) {
-//			  poll_keyboard();
-//			  timer_200hz = 0;
-//		  }
-//	  }
-	  poll_keyboard();
+	  if (TIMER_COUNT == SET) {
+		  TIMER_COUNT = RESET;
+		  timer_200hz++;
+		  if (timer_200hz == 2) {
+			  poll_keyboard();
+			  timer_200hz = 0;
+		  }
+	  }
 
   }
   /* USER CODE END 3 */

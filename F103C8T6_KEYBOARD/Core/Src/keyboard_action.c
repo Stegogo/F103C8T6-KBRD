@@ -49,7 +49,6 @@ void poll_keyboard()
 
 
 	uint8_t key = read_keyboard();
-	//HIDkeyboard.KEYCODE1 = key;
 	if (key == 0)  HIDkeyboard.KEYCODE1 = 0x01; // no key pressed
 	if (key == 1)  HIDkeyboard.KEYCODE1 = 0x1E;
 	if (key == 2)  HIDkeyboard.KEYCODE1 = 0x1F;
