@@ -6298,7 +6298,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AP2210N-3.3TRG1:SOT95P280X145-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 194.31 58.42 0)
 			(effects
 				(font
